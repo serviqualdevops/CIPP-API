@@ -1,0 +1,21 @@
+{
+  "name": "Licence",
+  "style": "Table",
+  "Fields": [
+    {
+      "name": "Tenant",
+      "UseExistingInfo": false,
+      "FrontendFields": [
+        {
+          "name": "Tenant"
+        }
+      ],
+      "StoreAs": "JSON",
+      "API": "CIPPFunction",
+      "ExtractFields": [
+        "Tenant"
+      ],
+      "Command": "Get-CIPPTable -TableName cachelicenses"
+    }
+  ]
+}
